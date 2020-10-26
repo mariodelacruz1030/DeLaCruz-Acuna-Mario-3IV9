@@ -1,24 +1,24 @@
-import java.util.Scanner;
-class Scanner{
+import java.util.Scanner;  
+public class Scanner{
 
-    public static void main(String[] args){
-        Sring nombre;
-        int edad;
-        float beca;
+    public static void main(String args[]){
 
-        Scanner entrada = new Scanner(System.in);
+        Scanner in=new Scanner(System.in);
 
-        System.out.println("Dime tu nombre");
-        nombre = entrada.nextLine();
-        System.out.println("Dime tu edad");
-        edad = entrada.nextInt();
-        System.out.println("Dime el moto de tu beca");
-        beca = entrada.nextFloat();
+        String nombre = "";
+        int edad=0;
+        float beca=1;
 
+        System.out.println("Dime tu nombre: ");
+        nombre = in.nextLine();
+        System.out.println("Dime tu edad: ");
+        edad = in.nextInt();
+        System.out.println("Tu beca es de ¿que monto?: ");
+        beca = in.nextFloat();
 
-        System.out.println("Tu nombre es: " + nombre);
-        System.out.println("Tu edad es de: " + edad + "años");
-        System.out.println("Tu beca es de: $" + beca);
-        
+        System.out.println("Tu nombre es: "+nombre);
+        System.out.println("Tu edad es: "+edad);
+        System.out.println("Tu beca es de: "+beca);
+
     }
 }
